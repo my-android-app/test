@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_window"
+    android:orientation="horizontal"
+    android:paddingBottom="90dp" >
+
+    <ListView
+        android:id="@+id/lv_city_only"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/expandablelist_gray_bg"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_item_city_bg" />
+</LinearLayout>

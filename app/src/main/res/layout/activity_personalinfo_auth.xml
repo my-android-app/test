@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		        
+                <TextView
+                    
+                    android:id="@+id/tv_state"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="20dp"
+			        android:text="名医助手正在审核中，请耐心等待。"
+			        android:layout_gravity="center_horizontal"
+			        />
+                
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="20dp"
+			        android:text="请完成实名认证"
+			        android:drawablePadding="2dp"
+			        android:drawableRight="@drawable/p_shiming" />
+			
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:layout_marginTop="4dp"
+			        android:layout_marginLeft="@dimen/view_big_margin"
+			        android:layout_marginRight="@dimen/view_big_margin"
+			        android:background="@color/divider_line_gray" />
+			    
+			     <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:text="上传医生职业证书或手持工牌照" 
+			        android:layout_marginTop="6dp"/>
+			     
+			      
+			
+			     <com.dixiang.framework.bitmap.NoScrollGridView
+			       android:id="@+id/noScrollgridview"
+			       android:layout_width="match_parent"
+			       android:paddingTop="10dp"
+			       android:paddingRight="10dp"
+			       android:layout_height="wrap_content"
+			       android:horizontalSpacing="4dp"
+			       android:numColumns="3"
+			       android:scrollbars="none"
+			       android:layout_marginLeft="@dimen/view_big_margin"
+			        android:layout_marginRight="@dimen/view_big_margin"
+			       android:verticalSpacing="3dp" />
+			
+			     <View
+			        android:layout_width="match_parent"
+			        android:layout_height="1dp"
+			        android:layout_marginTop="@dimen/view_big_margin"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="@color/divider_line_gray" />
+			      
+			     
+			        <Button
+                        android:id="@+id/btn_upcase"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_gold_cyan_bg"
+                        android:gravity="center"
+                        android:text="补充图片"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_14" />
+			     
+			     
+			     <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginTop="6dp"
+			        android:text="(请确保照片内容清晰可见)" 
+			        android:textColor="@color/red" 
+			        android:textSize="@dimen/textsize_13"/>
+			     
+			     
+			      <ImageView 
+			          android:layout_width="match_parent"
+			          android:layout_height="wrap_content"
+			          android:layout_marginTop="20dp"
+			          android:layout_gravity="center_horizontal"
+			          android:src="@drawable/example_auth_pic"/>
+			     <Button 
+			         android:id="@+id/btn_commit"
+			        android:layout_width="match_parent"
+			        android:layout_height="45dp"
+			        android:background="@color/actionbar_bg_color"
+			        android:layout_gravity="center_horizontal"
+			        android:layout_marginTop="30dp"
+			        android:text="提交"
+			        android:textColor="@color/white"
+			        android:textSize="@dimen/textsize_16"
+			        android:onClick="onCommitFile"
+			        android:layout_margin="30dp"/>
+		        </LinearLayout>
+    </ScrollView>
+
+    
+     
+</LinearLayout>

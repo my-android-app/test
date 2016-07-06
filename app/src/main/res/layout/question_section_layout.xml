@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/fee_min"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius_border_question_bg"
+        android:gravity="center"
+        android:hint="最低额度"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColorHint="@color/list_item_gray_text"
+        android:textSize="@dimen/textsize_14" />
+
+    <TextView
+        android:id="@+id/tv_section_and"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="~"
+        android:textColor="@color/black3" />
+
+    <EditText
+        android:id="@+id/fee_max"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius_border_question_bg"
+        android:gravity="center"
+        android:hint="最高额度"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColorHint="@color/list_item_gray_text"
+        android:textSize="@dimen/textsize_14" />
+
+    <TextView
+        android:id="@+id/tv_section_units"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:text="元"
+        android:textColor="@color/black3" />
+
+</LinearLayout>

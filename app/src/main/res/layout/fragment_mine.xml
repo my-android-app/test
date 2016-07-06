@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_light_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rv_person"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@color/actionbar_bg_color"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/avtar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/person_avtar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/avtar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_big_margin"
+                android:layout_toRightOf="@id/avtar"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_15" />
+
+                <TextView
+                    android:id="@+id/tv_shiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_gold_cyan_bg_normal"
+                    android:padding="2dp"
+                    android:text="未实名认证"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go_green" />
+        </RelativeLayout>
+
+       
+
+        <RelativeLayout
+            android:id="@+id/view_mypatient"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/view_small_margin"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_mypatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_mypatient_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_mypatient"
+                android:text="我的患者" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+         
+         <RelativeLayout
+            android:id="@+id/view_receive"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:paddingLeft="25dp"
+            android:clickable="true"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_receive_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_receive"
+                android:text="收到的预约" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+         
+         
+          <RelativeLayout
+            android:id="@+id/view_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_agreement_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_agreement"
+                android:text="名医主刀顾问协议" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+         
+         <RelativeLayout
+            android:id="@+id/view_sign"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_sign_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_sign"
+                android:text="成为签约主刀专家" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+        
+         
+          <RelativeLayout
+            android:id="@+id/view_contact"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_contact_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_contact"
+                android:text="联系客服" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+         
+         <RelativeLayout
+            android:id="@+id/view_invite"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white"
+            android:paddingLeft="25dp"
+            android:visibility="gone"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/icon_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mine_invite_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_invite"
+                android:text="邀请专家" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_go" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

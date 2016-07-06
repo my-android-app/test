@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="已认证" />
+<!-- 您已提交实名认证照片，名医助手正在审核中，请耐心等待。 -->
+    <com.dixiang.framework.bitmap.NoScrollGridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_big_margin"
+        android:layout_marginRight="@dimen/view_big_margin"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/radius_bg"
+        android:onClick="onCommitFile"
+        android:text="补充图片"
+        android:textColor="@color/list_item_gray_text"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="gone" />
+
+</LinearLayout>

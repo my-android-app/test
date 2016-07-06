@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg_color">#19aea5</color>
+    <color name="black">#000000</color>
+    <color name="black1">#003333</color>
+    <color name="black2">#292929</color>
+    <color name="black3">#757575</color>
+    <color name="black4">#808080</color>
+    <color name="black5">#999999</color>
+    <color name="black_line">#ededed</color>
+    <color name="main_content">#f5f5f5</color>
+    <color name="radio_btn_pressed">#ea5f4b</color>
+    <color name="tb_munion_item_force">#e3e3e3</color>
+    <color name="text_gray">#B3B3B3</color>
+    <color name="transparent">#0000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="RoundedImageView"><attr format="dimension" name="riv_corner_radius"/><attr format="dimension" name="riv_corner_radius_top_left"/><attr format="dimension" name="riv_corner_radius_top_right"/><attr format="dimension" name="riv_corner_radius_bottom_left"/><attr format="dimension" name="riv_corner_radius_bottom_right"/><attr format="dimension" name="riv_border_width"/><attr format="color" name="riv_border_color"/><attr format="boolean" name="riv_mutate_background"/><attr format="boolean" name="riv_oval"/><attr name="android:scaleType"/><attr name="riv_tile_mode"><enum name="clamp" value="0"/><enum name="repeat" value="1"/><enum name="mirror" value="2"/></attr><attr name="riv_tile_mode_x"><enum name="clamp" value="0"/><enum name="repeat" value="1"/><enum name="mirror" value="2"/></attr><attr name="riv_tile_mode_y"><enum name="clamp" value="0"/><enum name="repeat" value="1"/><enum name="mirror" value="2"/></attr></declare-styleable>
+    <dimen name="actionbar_back_magin_right">10dp</dimen>
+    <dimen name="actionbar_option_magin_left">10dp</dimen>
+    <dimen name="actionbar_padding_left_right">20dp</dimen>
+    <dimen name="textsize28">28sp</dimen>
+    <dimen name="textsize42">42sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="select_photo_title">选择照片</string>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="LoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

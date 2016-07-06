@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white" />
+
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_bg"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textColor="@color/list_item_gray_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_gray"
+            android:layout_marginTop="3dp" 
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入您想要合作的专家名称"
+            android:singleLine="true"
+            android:textColorHint="@color/list_item_checked_gray"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_bg"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="医院"
+            android:textColor="@color/list_item_gray_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_gray"
+            android:layout_marginTop="3dp" 
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/et_hp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入该专家所在医院"
+            android:singleLine="true"
+                android:textColorHint="@color/list_item_checked_gray"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_bg"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="科室"
+            android:textColor="@color/list_item_gray_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_gray"
+            android:layout_marginTop="3dp" 
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/et_dept"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入该专家所在科室"
+            android:singleLine="true"
+                android:textColorHint="@color/list_item_checked_gray"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_bg"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系方式"
+            android:textColor="@color/list_item_gray_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_gray"
+            android:layout_marginTop="3dp" 
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入该专家的联系方式"
+                android:textColorHint="@color/list_item_checked_gray"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+</LinearLayout>

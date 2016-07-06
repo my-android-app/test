@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeff1"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+    	android:paddingLeft="5dp"
+    	android:paddingRight="5dp">
+    	
+        	
+        	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:background="@drawable/radius_spt_bg"
+		   	    android:layout_marginTop="10dp"
+		   	    android:paddingLeft="10dp"
+		   	    android:paddingRight="10dp"
+		   	    android:paddingTop="16dp"
+		   	    android:paddingBottom="40dp"
+		   	    android:orientation="vertical">
+		   	    <TextView android:id="@+id/base_info"
+		   	        android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:textSize="@dimen/textsize_16"
+		   	        android:textColor="#3f4552"/>
+		   	    <TextView android:id="@+id/hs"
+		   	        android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:textSize="@dimen/textsize_16"
+		   	        android:textColor="#3f4552"/>
+		   	    </LinearLayout>
+		
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:orientation="horizontal"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="10dp">
+		   	    
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		   	        android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="选择就诊意向"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_intent"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"/>
+		   	    </RelativeLayout>
+		   	</LinearLayout>
+		   	
+		   	<View android:layout_width="match_parent"
+		   	    android:layout_height="1dp" 
+		   	    android:background="#ededed"/>
+		   	
+		   	<RelativeLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:paddingRight="10dp"
+		   	    android:paddingLeft="10dp"
+		   	    android:paddingTop="18dp"
+		   	    android:paddingBottom="32dp"
+		   	    android:background="@color/white">
+		   	    <RadioButton android:layout_width="130dp"
+		   	        android:layout_height="34dp"
+		   	        android:gravity="center"
+		   	        android:button="@null"
+		   	        android:text="邀请专家过来"
+		   	        android:textColor="#3f4552"
+		   	        android:textSize="@dimen/textsize_14"
+		   	        android:background="@drawable/intent_selector"/>
+		   	    
+		   	    <RadioButton android:layout_width="130dp"
+		   	        android:layout_height="34dp"
+		   	        android:gravity="center"
+		   	        android:button="@null"
+		   	        android:text="希望转诊治疗"
+		   	        android:textColor="#3f4552"
+		   	        android:textSize="@dimen/textsize_14"
+		   	        android:layout_alignParentRight="true"
+		   	        android:background="@drawable/intent_selector"/>
+		   	</RelativeLayout>
+		   	
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:orientation="vertical"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="15dp">
+		   	    
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		        	android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="请选择您的患者"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_doctor"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="6dp"
+		   	            android:layout_marginBottom="6dp"/>
+		   	    </RelativeLayout>
+		   	    
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="15dp"
+		   	        android:paddingTop="5dp"
+		   	        android:paddingBottom="4dp">
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_add"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="5dp"
+		   	            android:layout_marginBottom="5dp"
+		   	            android:layout_marginRight="4dp"
+		   	            android:layout_centerInParent="true"/>
+		   	        
+		   	    </RelativeLayout>
+		   	</LinearLayout>
+		   	    
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="150dp"
+		   	    android:orientation="vertical"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="15dp">
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		        	android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="诊疗意见"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ioc_advice"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="6dp"
+		   	            android:layout_marginBottom="6dp"/>
+		   	    </RelativeLayout>
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    
+		   	    <EditText android:layout_width="match_parent"
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:background="@null"
+		   	        android:textColorHint="#cccccc"
+		   	        android:textSize="@dimen/textsize_14"
+		   	        android:singleLine="true"
+		   	        android:layout_marginTop="10dp"
+		   	        android:hint="如果有其他说明，请在此补充。"
+		   	        android:paddingBottom="10dp"/>
+		   	</LinearLayout>
+		   	
+		   	<Button android:layout_width="match_parent"
+		   	    android:layout_height="40dp"
+		   	    android:gravity="center"
+		   	    android:text="提交"
+		   	    android:textSize="@dimen/textsize_16"
+		   	    android:textColor="@color/white"
+		   	    android:background="@color/actionbar_bg_color"
+		   	    android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</ScrollView>

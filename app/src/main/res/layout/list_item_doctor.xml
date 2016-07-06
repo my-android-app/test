@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" xmlns:app="http://schemas.android.com/apk/res/com.shoushuzhitongche.app">
+    	<LinearLayout android:id="@+id/img"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:layout_marginLeft="15dp"
+    	    android:layout_marginTop="15dp"
+    	    android:gravity="center">
+    	    <com.dixiang.framework.widget.roundedimageview.RoundedImageView
+    	        android:id="@+id/ico_av"
+    	        android:layout_width="60dp"
+    	        android:layout_height="60dp"
+    	        android:background="@drawable/default_doctor"
+    	        android:scaleType="centerCrop"
+            	app:riv_oval="true"
+    	        />
+    	    <TextView 
+    	        android:id="@+id/is_qianyue"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:background="@drawable/round_text_bg"
+    	        android:textColor="@color/white"
+    	        android:textSize="@dimen/textsize_14"
+    	        android:paddingLeft="1dp"
+    	        android:visibility="gone"
+    	        android:gravity="center"
+    	        android:paddingRight="1dp"
+    	        android:text="签约专家"/>
+    	</LinearLayout>
+    	
+    	<RelativeLayout android:id="@+id/info" 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="17dp"
+    	    android:layout_marginLeft="16dp"
+    	    android:layout_toRightOf="@id/img">
+    	    
+    	    <TextView android:id="@+id/doctor_name"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        style="@style/doctor_lab1"/>
+    	    
+    	    <TextView android:id="@+id/doctor_title"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginLeft="12dp"
+    	        android:layout_toRightOf="@id/doctor_name"
+    	        style="@style/doctor_lab1"
+    	        android:textColor="@color/black4"/>
+    	    
+    	    <TextView android:id="@+id/hp_dpt"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="5dp"
+    	        android:layout_below="@id/doctor_title"
+    	        style="@style/doctor_lab2"/>
+    	    
+    	    <TextView android:id="@+id/doctor_medical"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="5dp"
+    	        android:layout_toRightOf="@id/hp_dpt"
+    	        android:layout_below="@id/doctor_name"
+    	        android:layout_marginLeft="12dp"
+    	        style="@style/doctor_lab2"/>
+    	    
+    	    <TextView android:id="@+id/hp_name"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="5dp"
+    	        android:layout_below="@id/doctor_medical"
+    	        android:background="@drawable/radio_right_acion_bar_color_bg"
+    	        style="@style/doctor_lab2"
+    	        android:textColor="@color/actionbar_bg_color"
+    	        />
+    	    
+    	    </RelativeLayout>
+
+    	<TextView android:id="@+id/goodat" 
+    	    android:layout_width="match_parent" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_marginLeft="15dp" 
+    	    android:layout_marginRight="15dp" 
+    	    android:lineSpacingExtra="3dp"
+    	    android:layout_marginTop="12dp"
+    	    android:layout_below="@id/info"
+    	    android:maxLines="2"
+    	    android:ellipsize="end"
+    	    android:textSize="@dimen/textsize_13"
+    	    android:textColor="#333333"
+    	    android:paddingBottom="10dp"/>
+    
+    </RelativeLayout>

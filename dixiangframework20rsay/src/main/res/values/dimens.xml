@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="actionbar_padding_left_right">20dp</dimen>
+    <dimen name="actionbar_back_magin_right">10dp</dimen>
+    <dimen name="actionbar_option_magin_left">10dp</dimen>
+    
+    <dimen name="textsize42">42sp</dimen>
+     <dimen name="textsize28">28sp</dimen>
+    
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+</resources>

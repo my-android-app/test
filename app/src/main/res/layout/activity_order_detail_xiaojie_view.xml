@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_xiaojie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" 
+      android:visibility="gone"
+       >
+
+        <!-- android:visibility="gone" -->
+
+        <com.dixiang.framework.bitmap.NoScrollGridView
+            android:id="@+id/noScrollgridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="3dp" />
+
+
+        <TextView
+            android:id="@+id/tv_chongxin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_vertical|right"
+            android:text="补充图片"
+            android:textColor="@color/black2" />
+
+        <TextView
+            android:id="@+id/tv_btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/radius_green_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

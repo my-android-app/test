@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/radius_border_question_bg"
+        android:padding="5dp"
+        android:textSize="@dimen/textsize_14" 
+        android:hint="如无，可甜“无特殊要求"
+        android:gravity="top"
+        android:textColorHint="@color/list_item_gray_text"/>
+
+</LinearLayout>

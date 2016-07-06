@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white_bg" 
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="@color/white">
+        
+        <ImageView 
+            android:id="@+id/ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ico_baseinf"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_16"
+            android:text="@string/base_info"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ico"
+            android:layout_marginLeft="5dp"/>
+        
+         <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_go"/>
+         
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+		android:layout_height="1dp" 
+		android:background="#ededed"/>
+    
+     <RelativeLayout
+        android:id="@+id/rl_auth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="@color/white">
+        
+        <ImageView 
+            android:id="@+id/ico_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ico_auth"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_16"
+            android:text="@string/auth"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ico_auth"
+            android:layout_marginLeft="5dp"/>
+        
+         <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_go"/>
+         
+    </RelativeLayout>
+    
+	<View android:layout_width="match_parent"
+		android:layout_height="1dp" 
+		android:background="#ededed"/>
+	
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/radius_noborder_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="loginOut"/>
+    
+</LinearLayout>

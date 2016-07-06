@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  	    <include 
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/actionbar_layout" />
+    	    
+        <ScrollView android:id="@+id/scrollview_parent"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fillViewport="true"
+	        android:layout_below="@id/actionbar"
+	        android:scrollbars="none">
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="#f9f9fb"
+		        android:layout_weight="1"
+		        android:paddingLeft="@dimen/edit_item_padding_left"
+		        android:paddingRight="@dimen/edit_item_padding_left"
+		        android:orientation="vertical" >
+		        
+			    <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg">
+		
+		            <TextView
+		                android:id="@+id/tv_patient"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/patient_name"
+		                android:layout_centerVertical="true" />
+		            
+		            <View 
+					    android:layout_width="1dp"
+				   	    android:layout_height="20dp" 
+				   	    android:background="#ededed" 
+				   	    android:layout_toRightOf="@id/tv_patient"/>
+		
+		            <EditText
+		                android:id="@+id/et_patient_name"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_centerVertical="true"
+		                android:layout_toRightOf="@+id/tv_patient"
+		                android:singleLine="true" />
+		            
+		        </RelativeLayout>
+		        
+			    <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg">
+		
+		            <TextView
+		                android:id="@+id/tv_phone"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/patient_phone"
+		                android:layout_centerVertical="true" />
+		            
+		            <View 
+					    android:layout_width="1dp"
+				   	    android:layout_height="20dp" 
+				   	    android:background="#ededed" 
+				   	    android:layout_toRightOf="@id/tv_phone"/>
+		
+		            <EditText
+		                android:id="@+id/et_patient_phone"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_centerVertical="true"
+		                android:layout_toRightOf="@+id/tv_phone"
+		                android:singleLine="true"
+		                android:inputType="phone" />
+		            
+		        </RelativeLayout>
+		        
+			    <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg">
+		
+		            <TextView
+		                android:id="@+id/tv_birth"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:text="@string/date_of_birth" 
+		                android:layout_centerVertical="true"/>
+		            
+		            <View  
+					    android:layout_width="1dp"
+				   	    android:layout_height="20dp" 
+				   	    android:background="#ededed" 
+				   	    android:layout_toRightOf="@id/tv_birth"/>
+						
+		            <TextView
+		                android:id="@+id/et_birth"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_toRightOf="@+id/tv_birth"
+		                android:drawableRight="@drawable/date_selector"
+		                android:paddingRight="5dp"
+		                android:singleLine="true" 
+		                android:clickable="true"
+		                android:gravity="center_vertical"
+		                android:layout_centerVertical="true"
+		                android:onClick="onTimeClick"/>
+		        </RelativeLayout>
+		        
+   			    <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg">
+		
+		            <TextView
+		                android:id="@+id/tv_city"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:text="@string/patient_city" 
+		                android:layout_centerVertical="true"/>
+		            
+		            <View  
+					    android:layout_width="1dp"
+				   	    android:layout_height="20dp" 
+				   	    android:background="#ededed" 
+				   	    android:layout_toRightOf="@id/tv_city"/>
+		
+		            <TextView
+		                android:id="@+id/et_city"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_toRightOf="@+id/tv_city"
+		                android:singleLine="true"
+		                android:clickable="true"
+		                android:gravity="center_vertical"
+		                android:drawableRight="@drawable/select_ico"
+		                android:paddingRight="5dp"
+		                android:layout_centerVertical="true"
+		                android:onClick="onCityClick" />
+		            
+		        </RelativeLayout>
+		        
+   			    <RelativeLayout
+   			        android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg" >
+		
+		            <TextView
+		                android:id="@+id/tv_disease_name"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_centerVertical="true"
+		                android:text="@string/disease_name" />
+		            
+					<View  
+					    android:layout_width="1dp"
+				   	    android:layout_height="20dp" 
+				   	    android:background="#ededed" 
+				   	    android:layout_toRightOf="@id/tv_disease_name"/>
+					
+		            <EditText
+		                android:id="@+id/et_disease_name"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_toRightOf="@+id/tv_disease_name"
+		                android:layout_centerVertical="true"
+		                android:singleLine="true" />
+		            
+		        </RelativeLayout>
+		        
+   			    <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="50dp"
+		            android:layout_marginTop="15dp" 
+		            android:padding="10dp">
+
+   			        <RadioGroup android:id="@+id/rg_type"
+   			            android:layout_width="match_parent"
+   			            android:layout_height="match_parent"
+   			            android:gravity="center_horizontal"
+   			            android:orientation="horizontal">
+   			            
+   			        </RadioGroup>
+   			        
+		        </RelativeLayout>
+		        
+   			    <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:layout_marginTop="15dp"
+		            android:orientation="vertical"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:padding="10dp"
+		            android:background="@drawable/radius_bg">
+		
+		            <TextView
+		                android:id="@+id/tv_dsc"
+		                style="@style/edit_lab"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/disease_dsc" />
+				   	
+				   	<View android:layout_width="match_parent"
+				   	    android:layout_height="1dp" 
+				   	    android:background="#ededed"
+				   	    android:layout_marginTop="2dp"
+				   	    android:layout_marginBottom="6dp"/>
+		            
+		            <EditText
+		                android:id="@+id/et_dsc"
+		                style="@style/edit_default"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:maxLines="2"
+		                android:lines="2"
+		                android:hint="请填写疾病描述，若没有，请填写   无"
+		                android:layout_toRightOf="@+id/tv_dsc"/>
+		        </LinearLayout>
+	        	</LinearLayout>
+	        	<Button
+		            android:id="@+id/btn_commit"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="30dp"
+		            android:layout_marginRight="30dp"
+		            android:text="@string/btn_next"
+		            style="@style/btn_default"
+		            android:layout_marginTop="80dp"
+		            android:layout_marginBottom="100dp"
+		            android:onClick="onDataCommit"/>
+	        </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\left_back_white_icon.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\left_back_white_icon.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\dialog_bg.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\dialog_bg.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_pulltorefresh_arrow_up.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_pulltorefresh_arrow_up.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_pulltorefresh_arrow.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_loading.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\default_loading.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_doctor.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\default_doctor.png"
+    }
+]

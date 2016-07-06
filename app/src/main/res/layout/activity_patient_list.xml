@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/actionbar"
+        android:layout_marginBottom="@dimen/view_5_margin"
+        android:layout_marginLeft="@dimen/view_10_margin"
+        android:layout_marginRight="@dimen/view_10_margin"
+        android:layout_marginTop="@dimen/view_5_margin"
+        android:background="@drawable/radius_bg"
+        android:gravity="center"
+        android:hint="搜索"
+        android:textColorHint="@color/list_item_gray_text"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+            android:layout_below="@id/et_search"
+        android:layout_gravity="center" >
+
+        <com.dixiang.framework.widget.PullToRefreshView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#f0f0f0"
+                android:dividerHeight="@dimen/view_5_margin" />
+        </com.dixiang.framework.widget.PullToRefreshView>
+
+        <LinearLayout
+            android:id="@+id/ll_data_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_data_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="暂无数据"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/view_small_margin"
+        android:paddingTop="@dimen/view_small_margin" >
+
+        <TextView
+            android:id="@+id/tv_add_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_agree"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toCreatePatient"
+            android:padding="6dp"
+            android:text="+ 添加新患者"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

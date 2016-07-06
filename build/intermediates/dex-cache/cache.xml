@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\android_api_3.7.1.7.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b613e2dac6953c62365bdabfbf9e85f62b695d05">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\android_api_3.7.1.7_ec169a0b0bf2975aebec9a8ddc8be8763a5064a4.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\qiniu-android-sdk-7.0.9.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8e28fd90ca49d47df0a42884c2a97b1e9c405844">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\qiniu-android-sdk-7.0.9_306b9c10d623c2ad7f19aa1cdbd62c12a871ce0a.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\happy-dns-0.2.3.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1f1965c257f188a5c7e5895f49ca342b9a523d4b">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\happy-dns-0.2.3.2_ac8138fa72688cb29093a337136aa0757e0243b6.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\umeng-update-v2.6.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d81e28f2e92441bd8d75ff1df49f6651755b4c9f">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\umeng-update-v2.6.0.1_6f99aa57ded2e8d0ffee4063f5d848215842939e.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\android-async-http-1.4.9.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4bce6853028525c30e32faef9f4bcdc149505033">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_8ec549e97d6f17b20af95d90adb81875ee4bd9f8.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6fe30209f25b3797cc6818813aa32095dfc54279">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\instant-run-bootstrap_5f73c46451b0a02ed4109814a9c4eb38a9ff76f5.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\httpclient-4.4.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e2d3c5beed82fbbb712945db0aa14c94e219fad2">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\httpclient-4.4.1.1_6f43fca720beb404bebeb6dfefbd97e46fa12d21.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3d4def231366571cad7a07178773790a4d056766">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\library-2.4.0_b94c96bddae04710c3b1c3001c195337c651ed8d.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\cupboard-2.1.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5e1196feedaab327292a70cd85daf1252130fbd2">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\cupboard-2.1.4_23a7729c5e8bc434c80d2b55426aae2b4180ba02.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\androidasync-1.2.6.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f10d45a0b609301295ed7823285ee213a91ef3a2">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\androidasync-1.2.6_14b9eee19e9f47dd2d8e2dae97c496881b825952.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a5f4943fa5d0864bbbb1f04e16a4cdf0e1a1f9ac">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2_f8ace4e10225a4384f4843f975d942550f00c168.jar" />
+    </item>
+    <item
+        jar="D:\work\Doctor\doctor\build\intermediates\exploded-aar\Doctor\dixiangframework20rsay\unspecified\jars\libs\ion-1.2.7.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="28fa57623e19e189508e292daa36ea4a6ed9c597">
+        <dex dex="D:\work\Doctor\doctor\build\intermediates\pre-dexed\debug\ion-1.2.7_dd3010009cf15981869ede92fa2889298695460b.jar" />
+    </item>
+
+</items>

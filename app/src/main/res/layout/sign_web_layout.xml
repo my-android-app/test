@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+      <include 
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+      
+    <ProgressBar
+        android:layout_below="@id/actionbar"
+        android:layout_alignParentTop="true"
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:indeterminateOnly="false"
+        android:background="@drawable/progressbar"
+        android:visibility="visible" />
+
+    <LinearLayout android:id="@+id/view_option" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+            <Button android:id="@+id/btn_agree"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        style="@style/btn_default"
+		        android:text="同意"
+		        android:onClick="onBtnOption"/>
+            
+            <Button android:id="@+id/btn_cancle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        style="@style/btn_default"
+		        android:background="@drawable/bgd_relatly_line"
+		        android:textColor="@color/black3"
+		        android:text="取消"
+		        android:layout_marginTop="7dp"
+		        android:layout_marginBottom="10dp"
+		        android:onClick="onBtnOption"/>
+    </LinearLayout>
+    
+        <WebView
+        android:id="@+id/advertise_webview"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:layout_above="@id/view_option"
+        android:layout_below="@id/progress_bar"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

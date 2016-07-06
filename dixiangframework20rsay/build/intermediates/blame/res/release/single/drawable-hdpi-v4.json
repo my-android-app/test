@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\loading_bg.9.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\loading_bg.9.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\photo_unselect.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\photo_unselect.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_off_pressed_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_off_pressed_holo_light.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_on_pressed_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_on_pressed_holo_light.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_on_focused_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_on_focused_holo_light.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\take_picofcamera.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\take_picofcamera.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_close_bg_tap.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_close_bg_tap.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_close_bg_normal.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_close_bg_normal.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\photo_select.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\photo_select.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_off_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_off_holo_light.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_on_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_on_holo_light.png"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\umeng_update_btn_check_off_focused_holo_light.png",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\drawable-hdpi\\umeng_update_btn_check_off_focused_holo_light.png"
+    }
+]

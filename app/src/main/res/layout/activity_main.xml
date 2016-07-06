@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include 
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+  <FrameLayout 
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_view"
+        android:layout_below="@id/actionbar"/>
+    
+    
+        <LinearLayout
+	        android:id="@+id/menu_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/white"
+	        android:orientation="horizontal"
+	        android:paddingTop="5dp">
+			
+        <RadioGroup
+            android:id="@+id/main_grdiogroup"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/menu_home_selector"
+                android:checked="true"
+                android:text="首页"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_12"
+                android:onClick="onMenuChange"
+                android:textColor="@drawable/menu_text_sel"
+                android:id="@+id/rb1" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/menu_discover_selector"
+                android:text="发现"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_12"
+                android:textColor="@drawable/menu_text_sel"
+                android:onClick="onMenuChange"
+                android:id="@+id/rb2" />
+           
+           <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/menu_discover_selector"
+                android:text="发现"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_12"
+                android:button="@null"
+                android:textColor="@drawable/menu_text_sel"
+                android:onClick="onMenuChange"
+                android:visibility="invisible"
+                android:id="@+id/rb5" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/menu_order_selector"
+                android:text="订单"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_12"
+                android:button="@null"
+                android:textColor="@drawable/menu_text_sel"
+                android:onClick="onMenuChange"
+                android:id="@+id/rb3" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/menu_mine_selector"
+                android:text="我的"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_12"
+                android:onClick="onMenuChange"
+                android:textColor="@drawable/menu_text_sel"
+                android:id="@+id/rb4" />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/ioc_create"
+        android:text="创建"
+        android:typeface="serif"
+        android:textSize="@dimen/textsize_12"
+        android:button="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/main_tab_unsel"
+        android:onClick="onMenuChange"
+        android:id="@+id/rb6" 
+        android:layout_marginBottom="5dp"/>
+        
+   
+</RelativeLayout>

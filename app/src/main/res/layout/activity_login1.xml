@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg">
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+    <include layout="@layout/activity_login_top"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal">
+  
+           <View android:id="@+id/by_pwd" 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@color/actionbar_bg_color"/>
+           
+           <View android:id="@+id/by_phone" 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:background="@color/actionbar_bg_color"/>
+    </LinearLayout>
+    <include android:id="@+id/login_by_pwd" layout="@layout/activity_login2"/>
+    <include android:id="@+id/login_by_phone" layout="@layout/activity_login3"/>
+    </LinearLayout>

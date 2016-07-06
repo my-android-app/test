@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="@dimen/view_small_margin"
+    android:paddingTop="5dp" 
+    android:background="@color/white">
+
+    <TextView 
+        android:id="@+id/receive_date"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="@dimen/textsize_14"
+        android:text="2015-06-03"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/actionbar_bg_color"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout android:id="@+id/view_state" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/ico_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+        <TextView android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ico_state"
+            android:text="已完成"
+            android:textSize="@dimen/textsize_14"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_appoint"
+        android:layout_below="@id/receive_date"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_state" >
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="患者姓名："
+                android:textSize="@dimen/textsize_16" />
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_1"
+            android:layout_marginTop="@dimen/view_small_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="疾病名称："
+                android:textSize="@dimen/textsize_16" />
+
+            <TextView
+                android:id="@+id/tv_disease_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_2"
+            android:layout_marginTop="@dimen/view_small_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="就诊方式："
+                android:textSize="@dimen/textsize_16" />
+
+            <TextView
+                android:id="@+id/tv_intent_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+   
+</RelativeLayout>

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\activity_image_grid.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\activity_image_grid.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\tb_munion_aditem.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\tb_munion_aditem.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\view_dialog.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\view_dialog.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\actionbar_layout.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\actionbar_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\refresh_header.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\refresh_header.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\loading_dialog_layout.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\loading_dialog_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\umeng_update_dialog.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\activity_photo.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\activity_photo.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\refresh_footer.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\refresh_footer.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\release\\layout\\item_image_grid.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\src\\main\\res\\layout\\item_image_grid.xml"
+    }
+]

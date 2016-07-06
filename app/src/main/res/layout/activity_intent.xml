@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  	    <include 
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/actionbar_layout" />
+  	    
+  	    <ScrollView android:id="@+id/scrollview_parent"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fillViewport="true"
+	        android:layout_below="@id/actionbar"
+	        android:scrollbars="none">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+    	android:paddingLeft="5dp"
+    	android:layout_below="@id/actionbar"
+    	android:paddingRight="5dp">
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:orientation="horizontal"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="15dp">
+		   	    
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		   	        android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="选择就诊意向"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_intent"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"/>
+		   	    </RelativeLayout>
+		   	</LinearLayout>
+		   	
+		   	<View android:layout_width="match_parent"
+		   	    android:layout_height="1dp" 
+		   	    android:background="#ededed"/>
+		   	
+		   	<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="32dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="18dp" >
+				
+                <RadioButton
+                    android:id="@+id/rb_come"
+                    android:layout_width="130dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/intent_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="邀请专家过来"
+                    android:textColor="#3f4552"
+                    android:textSize="@dimen/textsize_14" />
+
+                <RadioButton
+                    android:id="@+id/rb_goto"
+                    android:layout_width="130dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/intent_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="希望转诊治疗"
+                    android:textColor="#3f4552"
+                    android:textSize="@dimen/textsize_14" />
+            </RelativeLayout>
+		   	
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:orientation="vertical"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="15dp">
+		   	    
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		        	android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="请填写您要预约的主刀医生"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_doctor"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="6dp"
+		   	            android:layout_marginBottom="6dp"/>
+		   	    </RelativeLayout>
+		   	    
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    
+		   	    <LinearLayout android:layout_width="match_parent"
+		   	        android:layout_height="wrap_content"
+		   	        android:orientation="horizontal"
+		   	        android:gravity="center">
+		   	        <LinearLayout android:layout_width="0dp"
+		   	            android:layout_height="wrap_content"
+		   	            android:orientation="horizontal"
+		   	            android:padding="10dp"
+		   	            android:layout_weight="1">
+		   	            <TextView android:layout_width="wrap_content"
+		   	                android:layout_height="wrap_content"
+		   	                android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:text="姓名:"/>
+		   	            <EditText 
+		   	                android:id="@+id/et_doctorname" 
+				   	        android:layout_width="match_parent"
+				   	        android:layout_height="wrap_content"
+				   	        android:background="@null"
+				   	        android:layout_weight="1"
+				   	        android:paddingLeft="5dp"
+				   	        android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:singleLine="true"/>
+		   	            
+		   	        </LinearLayout>
+		   	        
+		   	        <View android:layout_width="1dp"
+			   	    android:layout_height="30dp" 
+			   	    android:background="#ededed"/>
+		   	        
+		   	        <LinearLayout android:layout_width="0dp"
+		   	            android:layout_height="wrap_content"
+		   	            android:orientation="horizontal"
+		   	            android:padding="10dp"
+		   	            android:layout_weight="1">
+		   	            <TextView android:layout_width="wrap_content"
+		   	                android:layout_height="wrap_content"
+		   	                android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:text="科室:"/>
+		   	            <EditText 
+		   	                android:id="@+id/et_doctodept" 
+				   	        android:layout_width="match_parent"
+				   	        android:layout_height="wrap_content"
+				   	        android:background="@null"
+				   	        android:layout_weight="1"
+				   	        android:paddingLeft="5dp"
+				   	        android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:singleLine="true"/>
+		   	            
+		   	        </LinearLayout>
+		   	    </LinearLayout>
+		   	    
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    
+		   	    <LinearLayout android:layout_width="match_parent"
+		   	            android:layout_height="wrap_content"
+		   	            android:orientation="horizontal"
+		   	            android:padding="10dp">
+		   	            <TextView android:layout_width="wrap_content"
+		   	                android:layout_height="wrap_content"
+		   	                android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:text="医院:"/>
+		   	            <EditText 
+		   	                android:id="@+id/et_doctohp" 
+				   	        android:layout_width="match_parent"
+				   	        android:layout_height="wrap_content"
+				   	        android:background="@null"
+				   	        android:layout_weight="1"
+				   	        android:paddingLeft="5dp"
+				   	        android:textColorHint="#cccccc"
+				   	        android:textSize="@dimen/textsize_14"
+				   	        android:singleLine="true"/>
+		   	            
+		   	        </LinearLayout>
+		   	    
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    
+		   	    <RelativeLayout android:id="@+id/view_add" 
+		   	        android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="15dp"
+		   	        android:paddingTop="5dp"
+		   	        android:clickable="true"
+		   	        android:paddingBottom="4dp">
+		   	        <TextView android:id="@+id/lb" 
+		   	            android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="#cccccc"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_alignParentRight="true"
+		   	            android:text="查看签约专家"/>
+		   	        
+		   	        <ImageView android:id="@+id/iv_add" 
+		   	            android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ico_add"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="5dp"
+		   	            android:layout_toLeftOf="@id/lb"
+		   	            android:layout_marginBottom="5dp"
+		   	            android:layout_marginRight="4dp"/>
+		   	        
+		   	    </RelativeLayout>
+		   	</LinearLayout>
+		   	    
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="150dp"
+		   	    android:orientation="vertical"
+		   	    android:background="@color/white"
+		   	    android:layout_marginTop="15dp">
+		   	    <RelativeLayout android:layout_width="match_parent" 
+		   	        android:layout_height="wrap_content"
+		   	        android:paddingRight="10dp"
+		   	        android:paddingLeft="10dp"
+		   	        android:paddingTop="6dp"
+		        	android:paddingBottom="6dp">
+		   	        <TextView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:textColor="@color/actionbar_bg_color"
+		   	            android:textSize="@dimen/textsize_16"
+		   	            android:layout_centerVertical="true"
+		   	            android:text="诊疗意见"/>
+		   	        
+		   	        <ImageView android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:background="@drawable/ioc_advice"
+		   	            android:layout_alignParentRight="true"
+		   	            android:layout_centerVertical="true"
+		   	            android:layout_marginTop="6dp"
+		   	            android:layout_marginBottom="6dp"/>
+		   	    </RelativeLayout>
+		   	    <View android:layout_width="match_parent"
+			   	    android:layout_height="1dp" 
+			   	    android:background="#ededed"/>
+		   	    
+		   	    <EditText android:id="@+id/et_dsc" 
+		   	        android:layout_width="match_parent"
+		   	        android:layout_height="match_parent"
+		   	        android:paddingRight="10dp"
+		   	        android:layout_weight="1"
+		   	        android:paddingLeft="10dp"
+		   	        android:background="@null"
+		   	        android:textColorHint="#cccccc"
+		   	        android:textSize="@dimen/textsize_14"
+		   	        android:layout_marginTop="10dp"
+		   	        android:hint="如果有其他说明，请在此补充。若没有，请填写  无"
+		   	        android:paddingBottom="10dp"
+		   	        android:gravity="top"/>
+		   	</LinearLayout>
+		   	
+		   	<Button android:id="@+id/btn_commit" 
+		   	    android:layout_width="match_parent"
+		   	    android:layout_height="40dp"
+		   	    android:gravity="center"
+		   	    android:text="提交"
+		   	    android:textSize="@dimen/textsize_16"
+		   	    android:textColor="@color/white"
+		   	    android:background="@color/actionbar_bg_color"
+		   	    android:onClick="onCommit"
+		   	    android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+		   	    android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

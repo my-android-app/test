@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_window"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/province_gray_bg"
+            android:divider="@color/expandablelist_gray_bg"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_item_city_bg" />
+
+        <ListView
+            android:id="@+id/lv_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@color/expandablelist_gray_bg"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_item_city_bg" />
+    </LinearLayout>
+
+</LinearLayout>

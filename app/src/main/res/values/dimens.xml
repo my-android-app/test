@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="view_big_margin">16dp</dimen>
+	<dimen name="view_small_margin">8dp</dimen>
+	
+	 <dimen name="view_10_margin">10dp</dimen>
+	<dimen name="view_5_margin">5dp</dimen>
+	
+	
+	<dimen name="edit_item_padding_left">25dp</dimen>
+	<dimen name="edit_item_padding_tv_right">15dp</dimen>
+	<dimen name="edit_item_hight">30dp</dimen>
+	<dimen name="intention_item_magin">15dp</dimen>
+	
+	<dimen name="upload_file_magin">15dp</dimen>
+	
+	<dimen name="login_h">53dp</dimen>
+    <dimen name="login_magin_left">17dp</dimen>
+    <dimen name="login_magin_right">19dp</dimen>
+    
+    <color name="divider_line_light_green">#8cd0cc</color>
+</resources>

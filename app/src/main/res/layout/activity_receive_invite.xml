@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/actionbar_bg_color" >
+
+        <RelativeLayout
+            android:id="@+id/back_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/actionbar_padding_left_right" >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/left_back_white_icon" />
+
+            <TextView
+                android:id="@+id/lab_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/actionbar_back_magin_right" />
+        </RelativeLayout>
+        <!--
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约列表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16"/>
+        
+ -->
+ 
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/wait_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_left_radius_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="@dimen/view_small_margin"
+                android:paddingRight="@dimen/view_small_margin"
+                android:paddingTop="4dp"
+                android:text="待处理"
+                android:textColor="@drawable/radio_text_bg" />
+
+            <RadioButton
+                android:id="@+id/finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_right_radius_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="@dimen/view_small_margin"
+                android:paddingRight="@dimen/view_small_margin"
+                android:paddingTop="4dp"
+                android:text="已完成"
+                android:textColor="@drawable/radio_text_bg" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <ListView
+            android:id="@+id/lv_receive_appoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#eeeeee"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:focusableInTouchMode="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_data_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_data_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="暂无数据"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--
+    
+    <com.shoushuzhitongche.app.widget.PullToRefreshView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptr_lv_receive_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </com.shoushuzhitongche.app.widget.PullToRefreshView>
+ --> 
+
+</LinearLayout>

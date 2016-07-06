@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_light_bg"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_topbar_radius_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingTop="4dp"
+            android:text="全 部"
+            android:textColor="@drawable/radio_top_text_bg"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_topbar_radius_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingTop="4dp"
+            android:text="待支付"
+            android:textColor="@drawable/radio_top_text_bg"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_topbar_radius_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingTop="4dp"
+            android:text="安排中"
+            android:textColor="@drawable/radio_top_text_bg"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_topbar_radius_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingTop="4dp"
+            android:text="待确认"
+            android:textColor="@drawable/radio_top_text_bg"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_topbar_radius_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingTop="4dp"
+            android:text="传小结"
+            android:textColor="@drawable/radio_top_text_bg"
+            android:textSize="@dimen/textsize_16" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <com.dixiang.framework.widget.PullToRefreshView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_item_light_bg"
+                android:dividerHeight="@dimen/view_5_margin" />
+        </com.dixiang.framework.widget.PullToRefreshView>
+
+       
+         <LinearLayout
+            android:id="@+id/ll_data_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_data_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="暂无数据"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

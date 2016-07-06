@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\tb_munion_aditem.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\tb_munion_aditem.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_image_grid.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_image_grid.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\refresh_footer.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\refresh_footer.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\actionbar_layout.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\actionbar_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\loading_dialog_layout.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\loading_dialog_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_dialog.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\view_dialog.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\umeng_update_dialog.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_photo.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_photo.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_image_grid.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\item_image_grid.xml"
+    },
+    {
+        "merged": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\refresh_header.xml",
+        "source": "D:\\work\\Doctor\\dixiangframework20rsay\\build\\intermediates\\bundles\\debug\\res\\layout\\refresh_header.xml"
+    }
+]

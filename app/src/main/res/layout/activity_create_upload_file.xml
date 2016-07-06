@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	    <include 
+	        android:id="@+id/actionbar"
+	        layout="@layout/actionbar_layout" />
+	    
+	    <ScrollView android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/actionbar"
+	        >
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="@dimen/upload_file_magin"
+		        android:paddingRight="@dimen/upload_file_magin"
+		        android:orientation="vertical">
+		        <TextView android:layout_width="match_parent" 
+		            android:layout_height="wrap_content"
+		            style="@style/tv_big_back"
+		            android:text="@string/upload_file_title1"
+		            android:layout_marginTop="@dimen/upload_file_magin"
+		            android:layout_marginBottom="@dimen/upload_file_magin"/>
+		        
+	   	        <TextView android:layout_width="match_parent" 
+		            android:layout_height="wrap_content"
+		            style="@style/tv_mid_back"
+		            android:text="@string/upload_file_title2"
+		            android:layout_marginBottom="@dimen/upload_file_magin"/>
+		           
+		           <com.dixiang.framework.bitmap.NoScrollGridView
+			            android:id="@+id/noScrollgridview"
+			            android:layout_width="match_parent"
+			            android:paddingTop="10dp"
+			            android:paddingRight="10dp"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:horizontalSpacing="4dp"
+			            android:numColumns="3"
+			            android:scrollbars="none"
+			            android:verticalSpacing="3dp" />
+		    </LinearLayout>
+		</ScrollView>
+		
+	    <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_next"
+            style="@style/btn_default"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="@dimen/upload_file_magin"
+            android:layout_marginRight="@dimen/upload_file_magin"
+            android:layout_alignParentBottom="true"
+            android:onClick="onDataCommit"/>
+	    
+</RelativeLayout>

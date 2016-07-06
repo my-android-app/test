@@ -1,0 +1,95 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+        <style name="tv_big_back">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+	<style name="doctor_lab2">
+        <item name="android:textColor">@color/black4</item>
+        <item name="android:textSize">@dimen/textsize_14</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+	    <style name="doctor_lab1">
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+	<style name="edit_lab">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">@dimen/edit_item_padding_tv_right</item>
+    </style>
+    
+	<style name="edit_default">
+        <item name="android:textColor">@color/default_lb_color</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+	<style name="btn_default">
+       <item name="android:background">@color/actionbar_bg_color</item>
+       <item name="android:gravity">center</item>
+       <item name="android:textColor">@color/white</item>
+       <item name="android:textSize">@dimen/textsize_16</item>
+       <item name="android:paddingTop">10dp</item>
+       <item name="android:paddingBottom">10dp</item>
+       <item name="android:paddingRight">10dp</item>
+       <item name="android:paddingLeft">10dp</item>
+   </style>
+   
+	<style name="tv_mid_back">
+        <item name="android:textColor">@color/black4</item>
+        <item name="android:textSize">@dimen/textsize_14</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+	<style name="intent_lb">
+	    <item name="android:textColor">@color/actionbar_bg_color</item>
+	    <item name="android:textSize">@dimen/textsize_16</item>
+	</style>
+	
+		<style name="edit_login">
+        <item name="android:textColor">#878787</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:background">@drawable/login_round_bg</item>
+        <item name="android:textColorHint">#878787</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+	<style name="login_edit">
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:textColorHint">#999999</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+	<style name="default_btn_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:background">@drawable/default_button_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

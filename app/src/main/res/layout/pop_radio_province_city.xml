@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_window"
+    android:orientation="horizontal"
+    android:paddingBottom="90dp" >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+         android:background="@color/province_gray_bg"
+        android:layout_weight="1" >
+
+        <RadioGroup
+            android:id="@+id/rg_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/province_gray_bg"
+            android:orientation="vertical" >
+        </RadioGroup>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_city"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:divider="@color/expandablelist_gray_bg"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_item_city_bg" />
+
+</LinearLayout>

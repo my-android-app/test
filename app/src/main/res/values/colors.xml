@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_bg_color">#06c1ae</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="main_tab_unsel">#a4a4a4</color>
+    <color name="light_black">#303030</color> <!-- 浅黑色 -->
+    <color name="red">#900</color>
+    <color name="btn_blue_color">#2eaaa0</color>
+    <color name="btn_timing_gray">#969696</color>
+    <color name="transparent_window">#40000000</color>
+    <color name="province_gray_bg">#f5f5f5</color>
+    <color name="expandablelist_gray_bg">#f2f2f1</color>
+    <color name="list_item_checked_gray">#cdcdcc</color>
+    <color name="list_item_gray_text">#989899</color>
+    <color name="default_lb_color">#221814</color>
+    <color name="light_white_bg">#f7f6f6</color>
+    <color name="divider_line_gray">#f0f0ed</color>
+    <color name="all_bg">#f9f9f9</color>
+     <color name="list_item_light_bg">#f7f7f7</color>
+     <color name="line_color">#f0f0ed</color>
+     <color name="fuzhu_brown">#f38124</color>
+     
+     <color name="agree">#5786ef </color>
+     <color name="disagree">#e63972</color>
+     <color name="black_222">#222222</color>
+     <color name="line_common">#d7d7d7</color>
+     
+     <color name="divider_light_white_gray">#f7f7f7</color>
+    </resources>

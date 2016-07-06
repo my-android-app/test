@@ -1,0 +1,413 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_layout" />
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp">
+        <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.对转诊病例有何要求？"
+                android:textSize="@dimen/textsize_16" />
+        
+        <RelativeLayout
+            android:id="@+id/ll_question_choice_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp">
+            
+            	<CheckBox android:id="@+id/rb11"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="1台"
+            	    android:tag="1"
+            	    android:gravity="center"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/rb12"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="2台"
+            	    android:tag="2"
+            	    android:gravity="center"
+            	    android:layout_toRightOf="@id/rb11"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/rb13"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="3台"
+            	    android:tag="3"
+            	    android:gravity="center"
+            	    android:layout_toRightOf="@id/rb12"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/rb14"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingBottom="5dp"
+            	    android:gravity="center"
+            	    android:text="其他:"
+            	    android:tag="4"
+            	    android:layout_below="@id/rb11"
+            	    android:textSize="14sp"/>
+            	
+            	<EditText android:id="@+id/edt_number" 
+            	    android:layout_width="50dp"
+            	    android:layout_height="wrap_content"
+            	    android:textSize="14sp"
+            	    android:paddingTop="5dp"
+            	    android:gravity="center"
+            	    android:layout_below="@id/rb12"
+            	    android:layout_toRightOf="@id/rb14"
+            	    android:background="@drawable/radius_gray_border_bg"/>
+
+            	<TextView android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:text="台"
+            	    android:gravity="center"
+            	    android:textSize="14sp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:layout_below="@id/rb12"
+            	    android:layout_toRightOf="@id/edt_number"/>
+        </RelativeLayout>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2.每台收费多少？"
+              android:textSize="@dimen/textsize_16" />
+        
+        <include layout="@layout/question_section_layout"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="3.时间成本控制要求？(可多选)"
+              android:textSize="@dimen/textsize_16" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp">
+            	<CheckBox android:id="@+id/check31" 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:textSize="14sp"
+            	    android:gravity="center"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:tag="train3h"
+            	    android:text="高铁3小时内"/>
+            	
+            	<CheckBox android:id="@+id/check32" 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:textSize="14sp"
+            	    android:gravity="center"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:tag="train5h"
+            	    android:text="高铁5小时内"/>
+            	
+            	<CheckBox android:id="@+id/check33" 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:textSize="14sp"
+            	    android:gravity="center"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:tag="plane2h"
+            	    android:text="飞机2小时内"/>
+            	
+            	<CheckBox android:id="@+id/check34" 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:textSize="14sp"
+            	    android:gravity="center"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:tag="plane3h"
+            	    android:text="飞机3小时内"/>
+            	
+            	<CheckBox android:id="@+id/check35" 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:textSize="14sp"
+            	    android:gravity="center"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:tag="none"
+            	    android:text="无"/>
+            	
+            </LinearLayout>
+            
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="4.一般周几方便外出会诊？(可多选)"
+              android:textSize="@dimen/textsize_16" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp">
+            
+            	<CheckBox android:id="@+id/chek41"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="周一"
+            	    android:tag="1"
+            	    android:gravity="center"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek42"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="周二"
+            	    android:tag="2"
+            	    android:gravity="center"
+            	    android:layout_toRightOf="@id/chek41"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek43"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:text="周三"
+            	    android:gravity="center"
+            	    android:tag="3"
+            	    android:layout_toRightOf="@id/chek42"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek44"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:gravity="center"
+            	    android:text="周四"
+            	    android:tag="4"
+            	    android:layout_below="@id/chek41"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek45"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:gravity="center"
+            	    android:text="周五"
+            	    android:tag="5"
+            	    android:layout_below="@id/chek41"
+            	    android:layout_toRightOf="@id/chek44"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek46"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:gravity="center"
+            	    android:tag="6"
+            	    android:text="周六"
+            	    android:layout_toRightOf="@id/chek45"
+            	    android:layout_below="@id/chek42"
+            	    android:textSize="14sp"/>
+            	
+            	<CheckBox android:id="@+id/chek47"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:button="@drawable/radio_multi_choice_bg"
+            	    android:paddingLeft="3dp"
+            	    android:paddingTop="5dp"
+            	    android:paddingRight="20dp"
+            	    android:paddingBottom="5dp"
+            	    android:gravity="center"
+            	    android:text="周日"
+            	    android:tag="7"
+            	    android:layout_below="@id/chek44"
+            	    android:textSize="14sp"/>
+            	
+        </RelativeLayout>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="5.您希望会诊什么样的病人?"
+              android:textSize="@dimen/textsize_16" />
+        
+        <EditText
+	        android:id="@+id/patients_prefer"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="@drawable/radius_border_question_bg"
+	        android:padding="5dp"
+	        android:textSize="@dimen/textsize_14" 
+	        android:hint="如没有特殊要求，可填 无 "
+	        android:gravity="top"
+	        android:textColorHint="@color/list_item_gray_text"/>
+        
+       <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="6.您常去哪些地区或医院会诊?"
+              android:textSize="@dimen/textsize_16" />
+        
+        <EditText
+	        android:id="@+id/freq_destination"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="@drawable/radius_border_question_bg"
+	        android:padding="5dp"
+	        android:textSize="@dimen/textsize_14" 
+	        android:hint="如没有特殊要求，可填  无 "
+	        android:gravity="top"
+	        android:textColorHint="@color/list_item_gray_text"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/divider_light_white_gray" />
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="7.您对手术地点/条件有何要求?"
+              android:textSize="@dimen/textsize_16" />
+        
+        <EditText
+	        android:id="@+id/destination_req"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="@drawable/radius_border_question_bg"
+	        android:padding="5dp"
+	        android:textSize="@dimen/textsize_14" 
+	        android:hint="如没有特殊要求，可填  无 "
+	        android:gravity="top"
+	        android:textColorHint="@color/list_item_gray_text"
+	        />
+        
+        <Button
+               android:id="@+id/btn_commit"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="@dimen/view_big_margin"
+               android:layout_marginRight="@dimen/view_big_margin"
+               android:layout_marginTop="40dp"
+               android:background="@color/actionbar_bg_color"
+               android:text="@string/btn_commit"
+               android:textColor="@color/white"
+               android:onClick="onCommit"
+               android:textSize="@dimen/textsize_16" 
+               android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+    
+        <RadioGroup
+	        android:id="@+id/main_grdiogroup"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:background="@color/white">
+        	
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="密码登录"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_16"
+                android:onClick="onMenuChange"
+                android:gravity="center"
+                android:checked="true"
+                android:textColor="@drawable/login_text_sel"
+                android:id="@+id/rb1" />
+            
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="验证码登录"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_16"
+                android:onClick="onMenuChange"
+                android:gravity="center"
+                android:textColor="@drawable/login_text_sel"
+                android:id="@+id/rb2" />
+            </RadioGroup>
+            
+</RelativeLayout>

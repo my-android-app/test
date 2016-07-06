@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/actionbar_bg_color" >
+
+        <RadioGroup
+            android:id="@+id/grdiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_left_radius_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="@dimen/view_small_margin"
+                android:paddingRight="@dimen/view_small_margin"
+                android:paddingTop="4dp"
+                android:text="待预约"
+                android:textColor="@drawable/radio_text_bg"
+                android:textSize="@dimen/textsize_16"
+                android:typeface="serif" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_right_radius_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="@dimen/view_small_margin"
+                android:paddingRight="@dimen/view_small_margin"
+                android:paddingTop="4dp"
+                android:text="已预约"
+                android:textColor="@drawable/radio_text_bg"
+                android:textSize="@dimen/textsize_16"
+                android:typeface="serif" />
+        </RadioGroup>
+    </RelativeLayout>

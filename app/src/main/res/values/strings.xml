@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">名医主刀</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="login_mobile_hint">请输入您的手机号</string>
+	<string name="register_get_smscode">获取验证码</string>
+	<string name="login_enter">登录</string>
+	<string name="good_at">擅长：%s</string>
+	<string name="fm_hospital_dept">科室</string>
+	<string name="fm_hospital_disease">疾病</string>
+	<string name="fm_hospital_area">地区</string>
+	<string name="order">预约</string>
+	<string name="create_patient">创建患者</string>
+	
+	<string name="patient_name">患者姓名</string>
+	<string name="patient_phone">联系方式</string>
+	<string name="date_of_birth">出生年月</string>
+	<string name="patient_sex">患者性别</string>
+	<string name="patient_city">所在城市</string>
+	<string name="disease_name">疾病名称</string>
+	<string name="disease_dsc">疾病描述</string>
+	<string name="btn_next">下一步</string>
+	
+	<string name="patient_name_error">患者姓名不能为空！</string>
+	<string name="birth_error">请选择出生年月！</string>
+	<string name="city_error">请选择城市！</string>
+	<string name="disease_name_error">疾病名称不能为空！</string>
+	<string name="gender_error">请选择性别！</string>
+	<string name="disease_dsc_error">疾病描述少于10个字！</string>
+	<string name="phone_error">您输入的手机号有误！</string>
+	<string name="dcs_error">您输入疾病描述！</string>
+	
+	<string name="go_detail"><u>查看详情</u></string>
+	<string name="text_confirm">确认</string>
+	<string name="text_save">保存</string>
+	<string name="text_edit">编辑</string>
+	
+	<string name="think_apply">感谢您的申请！</string>
+	<string name="success_dsc">\t您的认证信息已经成功提交！请耐心等待我们的审核通知。</string>
+	<string name="commit_success">提交成功</string>
+	
+	<string name="expect_target">期望目标患者:</string>
+	<string name="applysingn_hint">您想要获取那种患者或病例？如果没有特殊要求，请填写"无"</string>
+	<string name="expect_sign_agreement">《专家签约协议》</string>
+	<string name="btn_commit">提交</string>
+	<string name="apply_expert">专家签约</string>
+	<string name="apply_success_tip">我们会第一时间进行审核，一旦通过，您将成为名医主刀的签约专家，我们会履行协议中的义务。</string>
+	<string name="apply_success">申请成功</string>
+	
+	<string name="upload_file_title1">请您上传患者的相关病历资料：</string>
+	<string name="upload_file_title2">图片需清晰可见 ( 最多9张 )</string>
+	<string name="upload_patient_file">上传病历</string>
+	<string name="option_skip">跳过</string>
+	
+	<string name="base_info">基本信息</string>
+	<string name="auth">实名认证</string>
+	
+	<string name="dlg_ok">确定</string>
+	
+	<string name="back_app">您确定要退出程序 ?</string>
+	<string name="isCancell">您确定要放弃编辑 ?</string>
+	<string name="sign_go_out">去外地会诊</string>
+	
+	<string name="sign_receive_come">接受病人转诊</string>
+	<string name="digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="patient_item_dsc" > %1$s&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;%2$s &#160;&#160;&#160;&#160;&#160;%3$s</string>
+</resources>
